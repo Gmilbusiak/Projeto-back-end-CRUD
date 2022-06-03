@@ -27,8 +27,9 @@ $usuario = $_POST['usuario'];
 
 
 
-$sql = "UPDATE 'cadastro' SET nome = '$nome','data_nascimento' = '$data_nascimento','nome_mae' = '$nome_mae','cpf' = '$cpf','ende' = '$ende','usuario' = '$usuario'
+$sql = "UPDATE cadastro SET nome = '$nome',data_nascimento = '$data_nascimento',nome_mae = '$nome_mae',cpf = '$cpf',ende = '$ende',usuario = '$usuario'
         WHERE id = $id";
+    $resultado = mysqli_query ($conn,$sql);
     echo "<h1>$nome, seu cadastro foi atualizado com sucesso!</h1>";
 
 

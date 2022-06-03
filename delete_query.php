@@ -17,6 +17,7 @@ $nome = $_POST['nome'];
 
 
 $sql ="DELETE FROM 'cadastro'  WHERE id = $id";
+    $resultado = mysqli_query($conn,$sql);
     echo "<h1>$nome, Excluído com sucesso!</h1>";
 
 
